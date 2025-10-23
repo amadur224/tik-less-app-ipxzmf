@@ -20,12 +20,6 @@ export default function TabLayout() {
       icon: 'plus.circle.fill',
       label: 'Upload',
     },
-    {
-      name: 'profile',
-      route: '/(tabs)/profile',
-      icon: 'person.fill',
-      label: 'Profile',
-    },
   ];
 
   if (Platform.OS === 'ios') {
@@ -38,10 +32,6 @@ export default function TabLayout() {
         <NativeTabs.Trigger name="upload">
           <Icon sf="plus.circle.fill" drawable="ic_upload" />
           <Label>Upload</Label>
-        </NativeTabs.Trigger>
-        <NativeTabs.Trigger name="profile">
-          <Icon sf="person.fill" drawable="ic_profile" />
-          <Label>Profile</Label>
         </NativeTabs.Trigger>
       </NativeTabs>
     );
@@ -57,7 +47,6 @@ export default function TabLayout() {
       >
         <Stack.Screen name="(home)" />
         <Stack.Screen name="upload" />
-        <Stack.Screen name="profile" />
       </Stack>
       <FloatingTabBar tabs={tabs} />
     </>
