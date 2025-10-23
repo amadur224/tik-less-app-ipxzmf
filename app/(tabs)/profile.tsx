@@ -64,7 +64,7 @@ export default function ProfileScreen() {
 
         <View style={styles.videosSection}>
           <View style={styles.sectionHeader}>
-            <IconSymbol name="play.rectangle.fill" size={24} color={colors.text} />
+            <IconSymbol name="play.rectangle.fill" size={24} color={colors.primary} />
             <Text style={styles.sectionTitle}>My Videos</Text>
           </View>
 
@@ -149,7 +149,7 @@ const styles = StyleSheet.create({
   statDivider: {
     width: 1,
     height: 40,
-    backgroundColor: colors.highlight,
+    backgroundColor: colors.border,
   },
   editButton: {
     flexDirection: 'row',
@@ -159,6 +159,8 @@ const styles = StyleSheet.create({
     paddingVertical: 12,
     borderRadius: 24,
     gap: 8,
+    boxShadow: '0px 4px 12px rgba(13, 92, 77, 0.3)',
+    elevation: 4,
   },
   editButtonText: {
     fontSize: 16,

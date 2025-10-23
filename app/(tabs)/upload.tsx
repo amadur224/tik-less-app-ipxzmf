@@ -92,7 +92,7 @@ export default function UploadScreen() {
               <Text style={styles.uploadButtonText}>Choose from Gallery</Text>
             </Pressable>
 
-            <Pressable style={styles.uploadButton} onPress={recordVideo}>
+            <Pressable style={[styles.uploadButton, styles.recordButton]} onPress={recordVideo}>
               <IconSymbol name="video.fill" size={48} color={colors.secondary} />
               <Text style={styles.uploadButtonText}>Record Video</Text>
             </Pressable>
@@ -162,8 +162,14 @@ const styles = StyleSheet.create({
     padding: 32,
     alignItems: 'center',
     gap: 12,
-    boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
+    borderWidth: 2,
+    borderColor: colors.primary,
+    boxShadow: '0px 4px 12px rgba(13, 92, 77, 0.15)',
     elevation: 4,
+  },
+  recordButton: {
+    borderColor: colors.secondary,
+    boxShadow: '0px 4px 12px rgba(212, 175, 55, 0.15)',
   },
   uploadButtonText: {
     fontSize: 18,
@@ -179,7 +185,9 @@ const styles = StyleSheet.create({
     padding: 48,
     alignItems: 'center',
     gap: 16,
-    boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.1)',
+    borderWidth: 2,
+    borderColor: colors.primary,
+    boxShadow: '0px 4px 12px rgba(13, 92, 77, 0.15)',
     elevation: 4,
   },
   videoSelectedText: {
@@ -215,6 +223,8 @@ const styles = StyleSheet.create({
     color: colors.text,
     minHeight: 100,
     textAlignVertical: 'top',
+    borderWidth: 1,
+    borderColor: colors.border,
     boxShadow: '0px 2px 8px rgba(0, 0, 0, 0.05)',
     elevation: 2,
   },
@@ -229,7 +239,7 @@ const styles = StyleSheet.create({
     padding: 16,
     alignItems: 'center',
     marginTop: 16,
-    boxShadow: '0px 4px 12px rgba(255, 64, 129, 0.3)',
+    boxShadow: '0px 4px 12px rgba(13, 92, 77, 0.3)',
     elevation: 4,
   },
   publishButtonText: {

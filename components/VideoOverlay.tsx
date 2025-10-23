@@ -45,7 +45,7 @@ export default function VideoOverlay({
           <IconSymbol 
             name={isLiked ? "heart.fill" : "heart"} 
             size={32} 
-            color={isLiked ? colors.primary : '#FFFFFF'} 
+            color={isLiked ? colors.primaryLight : '#FFFFFF'} 
           />
           <Text style={styles.actionText}>{formatNumber(video.likes)}</Text>
         </Pressable>
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
     height: 40,
     borderRadius: 20,
     borderWidth: 2,
-    borderColor: '#FFFFFF',
+    borderColor: colors.primaryLight,
     marginRight: 12,
   },
   username: {

@@ -1,15 +1,27 @@
 
 import { StyleSheet, ViewStyle, TextStyle } from 'react-native';
 
+// Myleink - Islamic-inspired color palette
+// Emerald green represents Islam, gold for elegance, white for purity
 export const colors = {
-  background: '#F9F9F9',
+  background: '#F5F5F5',
+  backgroundDark: '#1A1A1A',
   text: '#212121',
+  textDark: '#FFFFFF',
   textSecondary: '#757575',
-  primary: '#FF4081',
-  secondary: '#64B5F6',
-  accent: '#FFD740',
+  textSecondaryDark: '#B0B0B0',
+  primary: '#0D5C4D', // Deep emerald green - Islamic color
+  primaryLight: '#10B981', // Lighter emerald
+  secondary: '#D4AF37', // Gold - elegance and value
+  accent: '#8B7355', // Bronze/copper
   card: '#FFFFFF',
-  highlight: '#BBDEFB',
+  cardDark: '#2A2A2A',
+  highlight: '#E8F5E9',
+  highlightDark: '#1E3A32',
+  border: '#E0E0E0',
+  borderDark: '#404040',
+  error: '#DC2626',
+  success: '#10B981',
 };
 
 export const buttonStyles = StyleSheet.create({
@@ -73,7 +85,7 @@ export const commonStyles = StyleSheet.create({
   },
   card: {
     backgroundColor: colors.card,
-    borderColor: colors.highlight,
+    borderColor: colors.border,
     borderWidth: 1,
     borderRadius: 10,
     padding: 10,
